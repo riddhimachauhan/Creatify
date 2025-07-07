@@ -1,13 +1,21 @@
 import React from "react";
-import { FaComments, FaCodeBranch, FaLock, FaPalette, FaUsers } from "react-icons/fa";
+//import { FaComments, FaCodeBranch, FaLock, FaPalette, FaUsers } from "react-icons/fa";
 
-const features = [
+/*const features = [
   { icon: <FaComments size={30} />, title: "Feedback Dashboard", description: "Manage client feedback seamlessly with threaded comments." },
   { icon: <FaCodeBranch size={30} />, title: "Visual Version Control", description: "Track and rollback design versions like Git for designers." },
   { icon: <FaLock size={30} />, title: "Secure Payments & Contracts", description: "Milestone payments held in escrow with automatic contracts." },
   { icon: <FaPalette size={30} />, title: "Brand Guidelines", description: "Shared libraries for typography, colors, and components." },
   { icon: <FaUsers size={30} />, title: "Community Marketplace", description: "Find gigs, sell templates, and connect with designers." },
+];*/
+const features = [
+  { title: "Feedback Dashboard", description: "Manage client feedback seamlessly with threaded comments." },
+  { title: "Visual Version Control", description: "Track and rollback design versions like Git for designers." },
+  { title: "Secure Payments & Contracts", description: "Milestone payments held in escrow with automatic contracts." },
+  { title: "Brand Guidelines", description: "Shared libraries for typography, colors, and components." },
+  { title: "Community Marketplace", description: "Find gigs, sell templates, and connect with designers." },
 ];
+
 
 const FeaturesSection = () => (
   <section className="py-20 px-6 bg-gray-50">
@@ -15,7 +23,7 @@ const FeaturesSection = () => (
       {features.map((feature, index) => (
         <div key={index} className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
           <div className="text-blue-600 mb-4 mx-auto w-12 h-12 flex items-center justify-center">
-            {feature.icon}
+            //{feature.icon}
           </div>
           <h3 className="text-xl font-semibold mb-2 text-gray-900">{feature.title}</h3>
           <p className="text-gray-700 text-sm">{feature.description}</p>
